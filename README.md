@@ -3,28 +3,17 @@
 
 Overview
 
-This project demonstrates how to store and represent a Sparse Matrix using a Linked List in C++.
-A sparse matrix is a matrix where most of the elements are zeros. Instead of storing all elements (including zeros), we only store the non-zero values with their positions (row, column). This saves memory and makes the structure more efficient.
+The main goal of this project involves creating an efficient sparse matrix representation system for C++ linked lists which handles matrices containing many zero elements. The storage of sparse matrices through 2D arrays proves inefficient because these methods allocate excessive memory space to store unneeded zero values. My solution implements linked lists to store non-zero matrix elements together with their row and column positions which reduces memory usage.Each non-zero matrix element in a singly linked list  contains four essential parts: row index ,column index,non-zero value and a pointer to next node. 
 
-Approach
+Features
 
-Node Structure
+Here singly linkedlist is used, where it store only non-zero values of a matrix
 
-Each non-zero element is stored as a node in a linked list.
+Another interesting thing is, here elements are inserted dynamically while it keeps sorted by row and column.
 
-Each node contains:
+It displays both the matrix one is original other is sparse matrix.
 
-Row index
-
-Column index
-
-Value
-
-Pointer to the next node.
-
-Insertion
-
-New nodes are inserted in sorted order (by row and column) so traversal is simple.
+Another advancement is a destructor is created where it works as a automatic memory cleaner.
 
 
 
